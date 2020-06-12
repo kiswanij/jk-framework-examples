@@ -1,0 +1,63 @@
+<tables>
+	<!-- ///////////////////////////////////////////////////////////////////////////// -->
+	<!-- Table Meta for : -hr_degrees-with id : -hr_degrees- -->
+	<!-- ///////////////////////////////////////////////////////////////////////////// -->
+	<table name='hr_degrees' icon-image='hr_degrees.png'>
+		<id-field name='degree_type_id' type='4' max-length='10' visible='false' enabled='false'/>
+		<field name='degree_type_name' max-length='255' required='false' default-value='NULL' />
+	</table>
+	<!-- ///////////////////////////////////////////////////////////////////////////// -->
+	<!-- Table Meta for : -hr_departments-with id : -hr_departments- -->
+	<!-- ///////////////////////////////////////////////////////////////////////////// -->
+	<table name='hr_departments' icon-image='hr_departments.png'>
+		<id-field name='dep_id' type='4' max-length='10' visible='false' enabled='false'/>
+		<field name='dep_name' max-length='255' />
+	</table>
+	<!-- ///////////////////////////////////////////////////////////////////////////// -->
+	<!-- Table Meta for : -hr_employee_degrees-with id : -hr_employee_degrees- -->
+	<!-- ///////////////////////////////////////////////////////////////////////////// -->
+	<table name='hr_employee_degrees' icon-image='hr_employee_degrees.png'>
+		<id-field name='emp_degree_id' type='4' max-length='10' visible='false' enabled='false'/>
+		<field name='emp_id' type='4' max-length='10' reference_table='hr_employees' reference_field='emp_id' />
+		<field name='degree_id' type='4' max-length='10' reference_table='hr_degrees' reference_field='degree_type_id' />
+	</table>
+	<!-- ///////////////////////////////////////////////////////////////////////////// -->
+	<!-- Table Meta for : -hr_employee_family-with id : -hr_employee_family- -->
+	<!-- ///////////////////////////////////////////////////////////////////////////// -->
+	<table name='hr_employee_family' icon-image='hr_employee_family.png'>
+		<id-field name='member_id' type='4' max-length='10' visible='false' enabled='false' />
+		<field name='employee_id' type='4' max-length='10' required='false' default-value='NULL' reference_table='hr_employees'
+			reference_field='emp_id' />
+		<field name='relation_id' type='4' max-length='10' required='false' default-value='NULL' reference_table='hr_family_relations'
+			reference_field='relation_id' />
+		<field name='member_name' max-length='255' />
+		<field name='age' type='4' max-length='10' required='false' default-value='NULL' />
+	</table>
+	<!-- ///////////////////////////////////////////////////////////////////////////// -->
+	<!-- Table Meta for : -hr_employee_personal_info-with id : -hr_employee_personal_info- -->
+	<!-- ///////////////////////////////////////////////////////////////////////////// -->
+	<table name='hr_employee_personal_info' icon-image='hr_employee_personal_info.png'>
+		<id-field name='emp_pers_id' type='4' max-length='10' visible='false' enabled='false' />
+		<field name='emp_id' type='4' max-length='10' reference_table='hr_employees' reference_field='emp_id' />
+		<field name='address' max-length='255' required='false' default-value='NULL' />
+		<field name='phone' max-length='255' />
+		<field name='email' max-length='255' required='false' default-value='NULL' />
+	</table>
+	<!-- ///////////////////////////////////////////////////////////////////////////// -->
+	<!-- Table Meta for : -hr_employees-with id : -hr_employees- -->
+	<!-- ///////////////////////////////////////////////////////////////////////////// -->
+	<table name='hr_employees' icon-image='hr_employees.png'>
+		<id-field name='emp_id' type='4' max-length='10' visible='false' enabled='false' />
+		<field name='dep_id' type='4' max-length='10' required='false' default-value='NULL' reference_table='hr_departments' reference_field='dep_id' />
+		<field name='emp_name' max-length='255' required='false' default-value='NULL' />
+		<field name='emp_salary' type='8' max-length='17' required='false' default-value='NULL' />
+		<field name='emp_picture' type='2004' max-length='2147483647' required='false' />
+	</table>
+	<!-- ///////////////////////////////////////////////////////////////////////////// -->
+	<!-- Table Meta for : -hr_family_relations-with id : -hr_family_relations- -->
+	<!-- ///////////////////////////////////////////////////////////////////////////// -->
+	<table name='hr_family_relations' icon-image='hr_family_relations.png'>
+		<id-field name='relation_id' type='4' max-length='10' visible='false' enabled='false'/>
+		<field name='relation_name' max-length='255' />
+	</table>
+</tables>

@@ -1,0 +1,29 @@
+<main-menu>
+	<menu name="HR Config">
+		<menu-item name="Departments">
+			<properties>
+				<property name="table-meta" value="hr_departments" />
+			</properties>
+		</menu-item>
+		<menu-item name="Degrees">
+			<properties>
+				<property name="table-meta" value="hr_degrees" />
+			</properties>
+		</menu-item>
+		<menu-item name="Family releationships">
+			<properties>
+				<property name="table-meta" value="hr_family_relations" />
+			</properties>
+		</menu-item>
+	</menu>
+	<menu name="HR Management">
+		<menu-item name="Employees ">
+			<properties>
+				<property name="table-meta" value="hr_employees" />
+				<property name="detail-tables" value="hr_employee_personal_info,hr_employee_degrees,hr_employee_family" />
+				<property name="detail-fields" value="emp_id,emp_id,employee_id" />
+				<property name="cross-table" value="false,true,false"/>
+			</properties>
+		</menu-item>
+	</menu>
+</main-menu>
