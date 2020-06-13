@@ -3,14 +3,14 @@
   <parent>
     <groupId>com.jalalkiswani</groupId>
     <artifactId>smart-eis-examples</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>smart-eis-examples-license</artifactId>
   <dependencies>
   	<dependency>
   		<groupId>com.jalalkiswani</groupId>
   		<artifactId>jk-license</artifactId>
-  		<version>1.0.0</version>
+  		<version>${framework.version}</version>
   	</dependency>
   </dependencies>
 </project>

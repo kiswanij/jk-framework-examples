@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>com.jalalkiswani</groupId>
 		<artifactId>smart-eis-examples</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>smart-eis-examples-smart-web</artifactId>
 	<packaging>war</packaging>
@@ -12,8 +12,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.jalalkiswani</groupId>
-			<artifactId>jk-smart-web</artifactId>
-			<version>1.0.0</version>
+			<artifactId>smart-eis-web</artifactId>
+			<version>${smart-web-version.version}</version>
 		</dependency>
 	</dependencies>
 </project>

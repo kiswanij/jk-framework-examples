@@ -4,25 +4,14 @@
 	<parent>
 		<groupId>com.jalalkiswani</groupId>
 		<artifactId>smart-eis-examples</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>smart-eis-examples-smart-desktop</artifactId>
 	<dependencies>
 		<dependency>
 			<groupId>com.jalalkiswani</groupId>
-			<artifactId>jk-smart-desktop</artifactId>
-			<version>1.0.0</version>
-			<exclusions>
-				<exclusion>
-					<groupId>mysql</groupId>
-					<artifactId>mysql-connector-java</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.11</version>
+			<artifactId>smart-eis-desktop</artifactId>
+			<version>${smart-eis-desktop.version}</version>
 		</dependency>
 	</dependencies>
 </project>

@@ -3,8 +3,15 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.jalalkiswani</groupId>
 	<artifactId>smart-eis-examples</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
+	<properties>
+		<jkdb.version>0.0.9-1</jkdb.version>
+		<jkfaces.version>0.0.9-4</jkfaces.version>
+		<jk-remote-reflection.version>0.0.5</jk-remote-reflection.version>
+		<smart-eis-desktop.version>0.0.9-6</smart-eis-desktop.version>
+		<smart-web-version.version>0.0.9-1</smart-web-version.version>
+	</properties>
 	<modules>
 		<module>smart-eis-example-db</module>
 		<module>smart-eis-examples-data</module>

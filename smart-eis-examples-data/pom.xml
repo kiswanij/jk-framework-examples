@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>com.jalalkiswani</groupId>
 		<artifactId>smart-eis-examples</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>smart-eis-examples-data</artifactId>
 	<dependencies>
@@ -12,7 +12,7 @@
 		<dependency>
 			<groupId>com.jalalkiswani</groupId>
 			<artifactId>jk-db</artifactId>
-			<version>1.0.0</version>
+			<version>${jkdb.version}</version>
 		</dependency>
 	</dependencies>
 </project>
