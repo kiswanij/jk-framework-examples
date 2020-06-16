@@ -8,7 +8,6 @@
 	</parent>
 	<artifactId>smart-eis-examples-data</artifactId>
 	<dependencies>
-
 		<dependency>
 			<groupId>com.jalalkiswani</groupId>
 			<artifactId>jk-db</artifactId>
